@@ -4,17 +4,26 @@
       <h1 class="--bold-text --no-margin">{{ text.main }}</h1>
       <h3>{{ text.sub }}</h3>
     </div>
-    <div class="image-container" :style="{ backgroundColor: $store.state.globalContrastColor }">
-      <object type="image/svg+xml" data="@/assets/images/a.svg">
-        <img src="@/assets/images/a.svg" alt="Lorem Logo">
-      </object>
+    <div
+      class="image-container"
+      :style="{ backgroundColor: $store.state.globalContrastColor }"
+    >
+      <HelloDoodle
+        :bg-color="$store.state.globalContrastColor"
+        :accent-color="$store.state.globalPrimaryColor"
+      />
     </div>
   </section>
 </template>
 
 <script>
+import HelloDoodle from "../Icons/HelloDoodle";
+
 export default {
   name: "Welcome",
+  components: {
+    HelloDoodle
+  },
   data: function() {
     return {
       text: {
@@ -48,10 +57,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    object {
-      width: 90%;
-    }
+    overflow: hidden;
   }
 }
 </style>
