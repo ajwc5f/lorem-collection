@@ -74,15 +74,15 @@ export default {
 <style scoped lang="scss">
 footer {
   .action {
-    background: $secondary !important;
-    color: $primary !important;
+    background: $colorSecondary !important;
+    color: $colorPrimary !important;
     text-align: center;
-    padding: $large_gap $standard_gap;
+    padding: $gapLarge $gapStandard;
     font-size: 2.5rem;
 
     a {
       text-decoration: none;
-      color: $primary !important;
+      color: $colorPrimary !important;
     }
   }
 
@@ -90,7 +90,7 @@ footer {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: $standard_gap;
+    padding: $gapStandard;
     flex-wrap: wrap;
 
     .logo {
@@ -127,7 +127,7 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
-    padding: $small_gap $standard_gap;
+    padding: $gapSmall $gapStandard;
     padding-top: 0;
   }
 }

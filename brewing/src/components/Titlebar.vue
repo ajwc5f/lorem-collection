@@ -2,7 +2,7 @@
   <header class="--bb">
     <div class="inner --left --br">
       <a class="logo" href="index.html">
-        <h2 :style="{ color: $store.state.globalPrimaryColor }">{{ text.logo }}</h2>
+        <h2>{{ text.logo }}</h2>
       </a>
     </div>
     <div class="inner --right">
@@ -30,24 +30,25 @@ export default {
 header {
   position: fixed;
   display: flex;
-  height: $sidebar_header_size;
-  padding-left: $sidebar_header_size;
+  height: $sidebarHeaderSize;
+  padding-left: $sidebarHeaderSize;
   top: 0;
   left: 0;
   right: 0;
   z-index: 8;
-  background: $primary;
+  background: $colorPrimary;
 
   .inner {
     position: relative;
     display: flex;
     align-items: center;
     height: 100%;
-    padding: $standard_gap;
+    padding: $gapStandard;
 
     .logo {
-      font-family: $accent_font;
+      font-family: $fontAccent;
       text-decoration: none;
+      color: $colorAccent;
     }
 
     .find {

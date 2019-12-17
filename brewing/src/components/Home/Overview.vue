@@ -59,7 +59,7 @@ export default {
 
 <style scoped lang="scss">
 .overview {
-  padding: $large_gap $standard_gap;
+  padding: $gapLarge $gapStandard;
 
   .ticker {
     display: flex;
@@ -67,9 +67,9 @@ export default {
     flex-direction: row;
     overflow: hidden;
     white-space: nowrap;
-    width: calc(100% + (2 * #{$standard_gap}));
-    margin-left: -$standard_gap;
-    margin-right: -$standard_gap;
+    width: calc(100% + (2 * #{$gapStandard}));
+    margin-left: -$gapStandard;
+    margin-right: -$gapStandard;
 
     h2 {
       @include marquee(left, 20s);
@@ -83,7 +83,7 @@ export default {
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
-    margin-bottom: $large_gap;
+    margin-bottom: $gapLarge;
 
     .product {
       position: relative;
@@ -102,7 +102,7 @@ export default {
     font-size: 2.5rem;
 
     a {
-      padding: $standard_gap 0;
+      padding: $gapStandard 0;
       display: block;
     }
   }

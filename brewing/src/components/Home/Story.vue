@@ -29,10 +29,10 @@ export default {
   width: inherit;
   div {
     @include content-left;
-    padding: $large_gap $standard_gap;
+    padding: $gapLarge $gapStandard;
 
     p {
-      margin-bottom: $large_gap;
+      margin-bottom: $gapLarge;
     }
   }
   img {

@@ -44,7 +44,7 @@ export default {
 
 <style scoped lang="scss">
 .shop {
-  padding: $large_gap $standard_gap;
+  padding: $gapLarge $gapStandard;
 
   .ticker {
     display: flex;
@@ -52,10 +52,10 @@ export default {
     flex-direction: row;
     overflow: hidden;
     white-space: nowrap;
-    width: calc(100% + (2 * #{$standard_gap}));
-    margin-left: -$standard_gap;
-    margin-right: -$standard_gap;
-    margin-bottom: $large_gap;
+    width: calc(100% + (2 * #{$gapStandard}));
+    margin-left: -$gapStandard;
+    margin-right: -$gapStandard;
+    margin-bottom: $gapStandard;
 
     div {
       @include marquee(right, 45s);

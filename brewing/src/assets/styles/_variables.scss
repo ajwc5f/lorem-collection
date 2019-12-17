@@ -1,19 +1,20 @@
 /* Colors */
-$primary: #fff;
-$secondary: #000;
+$colorPrimary: #fff;
+$colorSecondary: #000;
+$colorAccent: #ff5678;
 
 /* Fonts */
-$main_font: 'Montserrat', sans-serif;
-$accent_font: 'Phosphate-Solid', cursive;
+$fontMain: 'Montserrat', sans-serif;
+$fontAccent: 'Phosphate-Solid', cursive;
 
 /* Sizing */
-$sidebar_header_size: 5.5rem;
+$sidebarHeaderSize: 5.5rem;
 
-$section_left_width: 55%;
-$section_right_width: 45%;
+$sectionLeftWidth: 55%;
+$sectionRightWidth: 45%;
 
-$border_size: 2px;
+$borderSize: 2px;
 
-$small_gap: 1.5rem;
-$standard_gap: 2.5rem;
-$large_gap: 4rem;
+$gapSmall: 1.5rem;
+$gapStandard: 2.5rem;
+$gapLarge: 4rem;

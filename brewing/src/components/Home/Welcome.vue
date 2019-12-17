@@ -4,25 +4,19 @@
       <h1 class="--bold-text --no-margin">{{ text.main }}</h1>
       <h3>{{ text.sub }}</h3>
     </div>
-    <div
-      class="image-container"
-      :style="{ backgroundColor: $store.state.globalContrastColor }"
-    >
-      <HelloDoodle
-        :bg-color="$store.state.globalContrastColor"
-        :accent-color="$store.state.globalPrimaryColor"
-      />
+    <div class="image-container">
+      <WomanDogDoodle class="doodle" />
     </div>
   </section>
 </template>
 
 <script>
-import HelloDoodle from "../Icons/HelloDoodle";
+import WomanDogDoodle from "../Icons/WomanDogDoodle";
 
 export default {
   name: "Welcome",
   components: {
-    HelloDoodle
+    WomanDogDoodle
   },
   data: function() {
     return {
@@ -40,13 +34,13 @@ export default {
   position: relative;
   display: flex;
   width: inherit;
-  height: -webkit-calc(100vh - #{$sidebar_header_size} + #{$border_size});
-  height: -moz-calc(100vh - #{$sidebar_header_size} + #{$border_size});
-  height: calc(100vh - #{$sidebar_header_size} + #{$border_size});
+  height: -webkit-calc(100vh - #{$sidebarHeaderSize} + #{$borderSize});
+  height: -moz-calc(100vh - #{$sidebarHeaderSize} + #{$borderSize});
+  height: calc(100vh - #{$sidebarHeaderSize} + #{$borderSize});
 
   .cta {
     @include content-left;
-    padding: $standard_gap;
+    padding: $gapStandard;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -58,6 +52,12 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: #ffd52c;
+
+    .doodle {
+      width: 90%;
+      height: 100%;
+    }
   }
 }
 </style>

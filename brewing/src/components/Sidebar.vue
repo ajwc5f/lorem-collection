@@ -18,12 +18,12 @@ export default {
 <style lang="scss">
 .sidebar {
   position: fixed;
-  width: $sidebar_header_size;
+  width: $sidebarHeaderSize;
   top: 0;
   bottom: 0;
   left: 0;
   z-index: 9;
-  background: $primary;
+  background: $colorPrimary;
 
   .sidebar__inner {
     position: relative;

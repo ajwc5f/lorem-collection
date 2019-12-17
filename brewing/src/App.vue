@@ -31,11 +31,11 @@ export default {
 <style lang="scss">
 .app-content {
   position: relative;
-  padding-top: $sidebar_header_size;
-  padding-left: $sidebar_header_size;
+  padding-top: $sidebarHeaderSize;
+  padding-left: $sidebarHeaderSize;
   display: flex;
   width: 100%;
-  background: $primary;
+  background: $colorPrimary;
   flex-direction: column;
 }
 </style>
