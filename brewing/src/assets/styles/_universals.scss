@@ -15,11 +15,11 @@ body, html {
 body {
   position: relative;
   font-size: 2rem;
-  font-family: $main_font;
+  font-family: $fontMain;
   font-weight: 400;
   font-style: normal;
-  color: $secondary;
-  background-color: $secondary;
+  color: $colorSecondary;
+  background-color: $colorSecondary;
 }
 
 h1, h2, h3, h4, h5 {
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-  color: $secondary;
+  color: $colorSecondary;
   text-decoration: underline;
 }
 

@@ -1,26 +1,26 @@
 .--bt {
-    border-top: $border_size solid $secondary;
+    border-top: $borderSize solid $colorSecondary;
 }
 .--br {
-    border-right: $border_size solid $secondary;
+    border-right: $borderSize solid $colorSecondary;
 }
 .--bb {
-    border-bottom: $border_size solid $secondary;
+    border-bottom: $borderSize solid $colorSecondary;
 }
 .--bl {
-    border-left: $border_size solid $secondary;
+    border-left: $borderSize solid $colorSecondary;
 }
 .--bx {
-    border-right: $border_size solid $secondary;
-    border-left: $border_size solid $secondary;
+    border-right: $borderSize solid $colorSecondary;
+    border-left: $borderSize solid $colorSecondary;
 }
 .--by {
-    border-top: $border_size solid $secondary;
-    border-bottom: $border_size solid $secondary;
+    border-top: $borderSize solid $colorSecondary;
+    border-bottom: $borderSize solid $colorSecondary;
 }
 .--ba {
-    border: $border_size solid $secondary;
+    border: $borderSize solid $colorSecondary;
 }
 .--b-invert {
-    border-color: $primary;
+    border-color: $colorPrimary;
 }

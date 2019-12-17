@@ -1,9 +1,9 @@
 @mixin content-left {
     justify-content: flex-start;
-    width: $section_left_width;
+    width: $sectionLeftWidth;
 }
 
 @mixin content-right {
     justify-content: flex-end;
-    width: $section_right_width;
+    width: $sectionRightWidth;
 }
