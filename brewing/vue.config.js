@@ -9,6 +9,7 @@ module.exports = {
                 @import "@/assets/styles/_borders.scss";
                 @import "@/assets/styles/_animations.scss";
                 @import "@/assets/styles/_buttons.scss";
+                @import "@/assets/styles/_inputs.scss";
                 @import "@/assets/styles/_universals.scss";
                 `
       }

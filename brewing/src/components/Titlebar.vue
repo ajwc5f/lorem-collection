@@ -6,7 +6,7 @@
       </a>
     </div>
     <div class="inner --right">
-      <a class="find" href="#" v-html="text.findUs"></a>
+      <a class="find --subtle" href="#" v-html="text.findUs"></a>
     </div>
   </header>
 </template>
@@ -18,7 +18,7 @@ export default {
     return {
       text: {
         logo: "LOREM",
-        findUs: 'Find Us <i class="fal fa-long-arrow-right fa-lg"></i>'
+        findUs: 'Find Us <i class="fal fa-search-location"></i>'
       }
     };
   }

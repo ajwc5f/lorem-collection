@@ -1,0 +1,19 @@
+input[type="text"] {
+  -webkit-appearance: none;
+  background: transparent;
+  border: $borderSize solid $colorSecondary;
+  padding: 1rem;
+  color: $colorSecondary;
+  outline: none;
+  box-shadow: none;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  text-transform: uppercase;
+}
+
+label {
+  margin-bottom: 1rem;
+  display: block;
+}

@@ -5,22 +5,23 @@
         {{ $store.state.footerActionText }}
       </a>
     </div>
-    <div class="main-content">
-      <div class="logo --accent-font" v-html="logo"></div>
+    <div class="footer-main-content">
+      <div class="logo --accent-font">
+        <h2>Lorem<br />Brewing</h2>
+      </div>
       <ul class="links">
         <li v-for="(link, i) in links" :key="i + '_footer_link'">
           <a :href="link.href" class="--subtle">{{ link.text }}</a>
         </li>
       </ul>
       <div class="updates">
-        <label>Sign up for updates!</label>
-        <br>
-        <input type="input" placeholder="Email">
+        <label>Sign Up For Updates!</label>
+        <input type="text" placeholder="Email">
       </div>
     </div>
     <div class="sub-content">
-      <div>{{ disclaimer }}</div>
-      <div v-html="creator"></div>
+      <div>© ️Lorem Brewing 2019 — Terms — Privacy</div>
+      <div>Site by <a href="arenwells.com" target="_blank">Aren Wells</a></div>
     </div>
   </footer>
 </template>
@@ -30,7 +31,6 @@ export default {
   name: "Footer",
   data: function() {
     return {
-      logo: "<h2>Lorem<br>Brewing</h2>",
       links: [
         {
           href: "#",
@@ -60,12 +60,7 @@ export default {
           href: "#",
           text: "FAQ"
         }
-      ],
-      disclaimer: "© ️Lorem Brewing 2019 — Terms — Privacy",
-      creator: 'Site by <a href="arenwells.com" target="_blank">Aren Wells</a>',
-      updates: {
-        label: 'Sign up for updates!',
-      }
+      ]
     };
   }
 };
@@ -86,16 +81,28 @@ footer {
     }
   }
 
-  .main-content {
+  .footer-main-content {
     display: flex;
     justify-content: space-between;
     text-align: center;
     padding: $gapStandard;
     flex-wrap: wrap;
 
+    & > * {
+      &:first-child {
+        flex-grow: 1;
+        width: 30%;
+      }
+      &:not(first-child) {
+        flex-grow: 1;
+        width: 35%;
+      }
+    }
+
     .logo {
       text-align: left;
     }
+
     .links {
       list-style-type: none;
       padding-left: 0;
@@ -105,7 +112,7 @@ footer {
 
       li {
         flex: 1 0 50%;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.25rem;
         text-align: left;
 
         a {
@@ -114,11 +121,14 @@ footer {
         }
       }
     }
-    .updates {
-      text-align: right;
 
+    .updates {
+      text-align: left;
       label {
         font-size: 1.5rem;
+      }
+      input {
+        width: 100%;
       }
     }
   }
@@ -127,8 +137,7 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
-    padding: $gapSmall $gapStandard;
-    padding-top: 0;
+    padding: 0 $gapStandard $gapSmall;
   }
 }
 </style>
