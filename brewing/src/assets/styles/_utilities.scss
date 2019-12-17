@@ -1,0 +1,25 @@
+.--bold-text {
+  font-weight: 700;
+}
+.--light-text {
+  font-weight: 200;
+}
+
+.--accent-font {
+  font-family: $accent_font;
+  letter-spacing: 0.4px;
+}
+.--no-margin {
+  margin: 0;
+}
+
+a.--subtle {
+  text-decoration: none;
+}
+
+.--link-out::after {
+  font-family: 'Font Awesome 5 Pro';
+  content: "\f178";
+  padding-left: 1rem;
+  text-decoration: none;
+}

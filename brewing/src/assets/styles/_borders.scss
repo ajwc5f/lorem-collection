@@ -1,0 +1,26 @@
+.--bt {
+    border-top: $border_size solid $secondary;
+}
+.--br {
+    border-right: $border_size solid $secondary;
+}
+.--bb {
+    border-bottom: $border_size solid $secondary;
+}
+.--bl {
+    border-left: $border_size solid $secondary;
+}
+.--bx {
+    border-right: $border_size solid $secondary;
+    border-left: $border_size solid $secondary;
+}
+.--by {
+    border-top: $border_size solid $secondary;
+    border-bottom: $border_size solid $secondary;
+}
+.--ba {
+    border: $border_size solid $secondary;
+}
+.--b-invert {
+    border-color: $primary;
+}

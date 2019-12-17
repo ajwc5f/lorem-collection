@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  font-size: 2rem;
+  font-family: $main_font;
+  font-weight: 400;
+  font-style: normal;
+  color: $secondary;
+  background-color: $secondary;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  color: $secondary;
+  text-decoration: underline;
+}
+
+p {
+  margin: 0;
+}

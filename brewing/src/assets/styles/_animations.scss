@@ -1,0 +1,21 @@
+@keyframes marquee-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee-right {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.--marquee, .--marquee-left {
+    animation: marquee-left 15s linear infinite;
+}
+
+.--marquee-right {
+    animation: marquee-right 15s linear infinite;
+}
+
+@mixin marquee($direction, $duration) {
+    animation: marquee-#{$direction} $duration linear infinite;
+}

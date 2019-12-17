@@ -1,0 +1,11 @@
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 2px solid $secondary;
+  padding: 1rem;
+  color: $secondary;
+  outline: none;
+  box-shadow: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
