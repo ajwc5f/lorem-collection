@@ -4,13 +4,20 @@
       <p>{{ text.story }}</p>
       <button class="--link-out">{{ text.button }}</button>
     </div>
-    <img src="@/assets/images/b.png" />
+    <div class="image-container">
+      <WomanSwingGraphic/>
+    </div>
   </section>
 </template>
 
 <script>
+import WomanSwingGraphic from "../Graphics/WomanSwing";
+
 export default {
   name: "Story",
+  components: {
+    WomanSwingGraphic
+  },
   data: function() {
     return {
       text: {
@@ -35,8 +42,18 @@ export default {
       margin-bottom: $gapLarge;
     }
   }
-  img {
+  .image-container {
     @include content-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #D3E9FF;
+
+    svg {
+      width: 90%;
+      height: 100%;
+    }
   }
 }
 </style>

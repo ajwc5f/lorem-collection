@@ -1,22 +1,22 @@
 <template>
   <section class="welcome --bb">
     <div class="cta --br">
-      <h1 class="--bold-text --no-margin">{{ text.main }}</h1>
+      <h1 class="--bold-text">{{ text.main }}</h1>
       <h3>{{ text.sub }}</h3>
     </div>
     <div class="image-container">
-      <WomanDogDoodle class="doodle" />
+      <WomanDogGraphic/>
     </div>
   </section>
 </template>
 
 <script>
-import WomanDogDoodle from "../Icons/WomanDogDoodle";
+import WomanDogGraphic from "../Graphics/WomanDog";
 
 export default {
   name: "Welcome",
   components: {
-    WomanDogDoodle
+    WomanDogGraphic
   },
   data: function() {
     return {
@@ -44,6 +44,10 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    h1 {
+      margin: 0 0 $gapSmall;
+    }
   }
 
   .image-container {
@@ -52,9 +56,9 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #ffd52c;
+    background: #FFD52C;
 
-    .doodle {
+    svg {
       width: 90%;
       height: 100%;
     }
