@@ -21,8 +21,8 @@ export default {
   data: function() {
     return {
       text: {
-        main: "Lorem ipsum dolor sit amet.",
-        sub: "Diam phasellus vestibulum lorem sed risus ultricies tristique nulla."
+        main: "Lorem ipsum. Dolor sit amet.",
+        sub: "Diam phasellus vestibulum sed risus ultricies tristique nulla."
       }
     };
   }
@@ -47,6 +47,8 @@ export default {
 
     h1 {
       margin: 0 0 $gapSmall;
+      text-transform: uppercase;
+      font-weight: 400;
     }
   }
 

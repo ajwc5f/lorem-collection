@@ -69,8 +69,8 @@ export default {
 <style scoped lang="scss">
 footer {
   .action {
-    background: $colorSecondary !important;
-    color: $colorPrimary !important;
+    background: $colorPrimary !important;
+    color: $colorBase !important;
     text-align: center;
     padding: $gapLarge $gapStandard;
     font-size: 2.5rem;

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="dark">
     <Titlebar />
     <Sidebar />
     <div class="app-content">
@@ -35,7 +35,7 @@ export default {
   padding-left: $sidebarHeaderSize;
   display: flex;
   width: 100%;
-  background: $colorPrimary;
+  background: $colorBase;
   flex-direction: column;
 }
 </style>

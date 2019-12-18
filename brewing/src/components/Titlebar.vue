@@ -26,7 +26,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style scoped lang="scss">
 header {
   position: fixed;
   display: flex;
@@ -36,14 +36,14 @@ header {
   left: 0;
   right: 0;
   z-index: 8;
-  background: $colorPrimary;
+  background: $colorBase;
 
   .inner {
     position: relative;
     display: flex;
     align-items: center;
     height: 100%;
-    padding: $gapStandard;
+    padding: 0 $gapStandard;
 
     .logo {
       font-family: $fontAccent;

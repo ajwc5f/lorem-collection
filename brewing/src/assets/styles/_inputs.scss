@@ -1,9 +1,9 @@
 input[type="text"] {
   -webkit-appearance: none;
   background: transparent;
-  border: $borderSize solid $colorSecondary;
+  border: $borderSize solid $colorPrimary;
   padding: 1rem;
-  color: $colorSecondary;
+  color: $colorPrimary;
   outline: none;
   box-shadow: none;
   font-size: 1.5rem;
