@@ -5,9 +5,9 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    footerActionText: '',
-    globalPrimaryColor: '',
-    globalContrastColor: ''
+    footerActionText: "",
+    globalPrimaryColor: "",
+    globalContrastColor: ""
   },
   mutations: {},
   actions: {},

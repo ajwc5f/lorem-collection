@@ -16,7 +16,7 @@
       </ul>
       <div class="updates">
         <label>Sign Up For Updates!</label>
-        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Email" />
       </div>
     </div>
     <div class="sub-content">

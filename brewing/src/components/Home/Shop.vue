@@ -2,7 +2,12 @@
   <section class="shop --bb">
     <div class="ticker">
       <div>
-        <img class="item" v-for="(item, i) in shopItems" :src="item.image" :key="i + '_shop_item'">
+        <img
+          class="item"
+          v-for="(item, i) in shopItems"
+          :src="item.image"
+          :key="i + '_shop_item'"
+        />
       </div>
     </div>
     <button class="--link-out">{{ text.button }}</button>
@@ -16,22 +21,28 @@ export default {
     return {
       shopItems: [
         {
-          image: 'http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png'
+          image:
+            "http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png"
         },
         {
-          image: 'http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png'
+          image:
+            "http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png"
         },
         {
-          image: 'http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png'
+          image:
+            "http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png"
         },
         {
-          image: 'http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png'
+          image:
+            "http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png"
         },
         {
-          image: 'http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png'
+          image:
+            "http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png"
         },
         {
-          image: 'http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png'
+          image:
+            "http://pluspng.com/img-png/tshirt-png-black-t-shirt-png-transparent-image-2611.png"
         }
       ],
       text: {

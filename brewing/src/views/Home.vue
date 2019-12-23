@@ -5,7 +5,7 @@
     <Story />
     <Shop />
     <GraphicSection>
-      <img src="@/assets/images/banner-a.png">
+      <img src="@/assets/images/banner-a.png" />
     </GraphicSection>
   </div>
 </template>

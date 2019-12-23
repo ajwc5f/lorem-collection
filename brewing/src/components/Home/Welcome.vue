@@ -5,7 +5,7 @@
       <h3>{{ text.sub }}</h3>
     </div>
     <div class="image-container">
-      <WomanDogGraphic/>
+      <WomanDogGraphic />
     </div>
   </section>
 </template>
@@ -58,7 +58,7 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: #FFD52C;
+    background: #ffd52c;
 
     svg {
       width: 90%;

@@ -23,7 +23,9 @@ export default {
   },
   created() {
     this.$store.state.globalPrimaryColor = this.randomHex();
-    this.$store.state.globalContrastColor = this.invertColor(this.$store.state.globalPrimaryColor);
+    this.$store.state.globalContrastColor = this.invertColor(
+      this.$store.state.globalPrimaryColor
+    );
   }
 };
 </script>

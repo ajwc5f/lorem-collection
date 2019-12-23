@@ -1,7 +1,11 @@
 <template>
   <aside class="sidebar --br">
     <div class="sidebar__inner">
-      <button class="--reset hamburger" :class="{'is-active': menuIsActive}" @click="toggleMenu"></button>
+      <button
+        class="--reset hamburger"
+        :class="{ 'is-active': menuIsActive }"
+        @click="toggleMenu"
+      ></button>
     </div>
   </aside>
 </template>
@@ -45,7 +49,11 @@ export default {
       height: 35px;
       border: none;
       position: relative;
-      background: linear-gradient(to bottom, $colorPrimary 25%, transparent 25%);
+      background: linear-gradient(
+        to bottom,
+        $colorPrimary 25%,
+        transparent 25%
+      );
       background-size: 100% 40%;
       background-repeat-x: no-repeat;
       background-position: 0 0;
@@ -58,7 +66,7 @@ export default {
       width: 0;
       position: absolute;
       background-color: $colorPrimary;
-      content: '';
+      content: "";
       transform: rotate(0);
       top: 40%;
       transition: transform 0.3s ease, width 0.3s 0.2s ease;

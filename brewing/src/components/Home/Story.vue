@@ -5,7 +5,7 @@
       <button class="--link-out">{{ text.button }}</button>
     </div>
     <div class="image-container">
-      <WomanSwingGraphic/>
+      <WomanSwingGraphic />
     </div>
   </section>
 </template>
@@ -21,7 +21,8 @@ export default {
   data: function() {
     return {
       text: {
-        story: "Vivamus venenatis lectus vitae pretium egestas. Mauris vitae molestie enim, vel tincidunt nibh. Maecenas at libero posuere, pharetra tortor vel, mollis ante. Morbi auctor ex sit amet libero gravida, in gravida ante vulputate. Aliquam pellentesque ullamcorper nisi vel egestas. Maecenas lacinia velit sed viverra suscipit. Aenean fermentum consectetur urna, pharetra dignissim turpis interdum vitae. Quisque a urna odio.",
+        story:
+          "Vivamus venenatis lectus vitae pretium egestas. Mauris vitae molestie enim, vel tincidunt nibh. Maecenas at libero posuere, pharetra tortor vel, mollis ante. Morbi auctor ex sit amet libero gravida, in gravida ante vulputate. Aliquam pellentesque ullamcorper nisi vel egestas. Maecenas lacinia velit sed viverra suscipit. Aenean fermentum consectetur urna, pharetra dignissim turpis interdum vitae. Quisque a urna odio.",
         button: "Our Story"
       }
     };
@@ -48,7 +49,7 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: #D3E9FF;
+    background: #d3e9ff;
 
     svg {
       width: 90%;
