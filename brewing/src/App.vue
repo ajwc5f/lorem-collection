@@ -1,10 +1,8 @@
 <template>
   <div id="app" class="dark">
-    <div class="nav-container">
-      <Titlebar />
-      <Sidebar />
-      <NavDrawer />
-    </div>
+    <Titlebar />
+    <Sidebar />
+    <NavDrawer :class="{ 'is-active': this.$store.state.navDrawerIsActive }" />
     <div class="app-content">
       <router-view />
       <Footer />
@@ -36,23 +34,18 @@ export default {
 </script>
 
 <style lang="scss">
-.nav-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
+#app {
   background: $colorBase;
   color: $colorPrimary;
-}
-.app-content {
-  position: relative;
-  padding-top: $sidebarHeaderSize;
-  padding-left: $sidebarHeaderSize;
-  display: flex;
-  width: 100%;
-  background: $colorBase;
-  flex-direction: column;
+
+  .app-content {
+    position: relative;
+    padding-top: $sidebarHeaderSize;
+    padding-left: $sidebarHeaderSize;
+    display: flex;
+    width: 100%;
+    background: $colorBase;
+    flex-direction: column;
+  }
 }
 </style>

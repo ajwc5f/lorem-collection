@@ -25,9 +25,13 @@ a.--subtle {
   font-weight: 100;
 }
 
-.--bg-base {
-  background: $colorBase;
+.--color-set-standard > * {
+  background: $colorBase !important;
+  color: $colorPrimary !important;
+  border-color: $colorPrimary !important;
 }
-.--bg-primary {
-  background: $colorPrimary;
+.--color-set-inverse > * {
+  background: $colorPrimary !important;
+  color: $colorBase !important;
+  border-color: $colorBase !important;
 }

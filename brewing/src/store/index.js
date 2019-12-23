@@ -7,7 +7,8 @@ export default new Vuex.Store({
   state: {
     footerActionText: "",
     globalPrimaryColor: "",
-    globalContrastColor: ""
+    globalContrastColor: "",
+    navDrawerIsActive: false
   },
   mutations: {},
   actions: {},

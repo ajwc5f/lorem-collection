@@ -53,6 +53,7 @@ header {
 
     .find {
       font-weight: bold;
+      color: inherit;
     }
   }
 
