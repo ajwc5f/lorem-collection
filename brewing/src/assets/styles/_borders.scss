@@ -21,6 +21,9 @@
 .--ba {
     border: $borderSize solid $colorPrimary;
 }
-.--b-invert {
+.--bc-base {
     border-color: $colorBase;
+}
+.--bc-primary {
+    border-color: $colorPrimary;
 }

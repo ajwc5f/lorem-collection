@@ -77,7 +77,7 @@ footer {
 
     a {
       text-decoration: none;
-      color: $colorPrimary !important;
+      color: $colorBase !important;
     }
   }
 

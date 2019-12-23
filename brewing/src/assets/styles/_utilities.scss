@@ -25,4 +25,9 @@ a.--subtle {
   font-weight: 100;
 }
 
-
+.--bg-base {
+  background: $colorBase;
+}
+.--bg-primary {
+  background: $colorPrimary;
+}

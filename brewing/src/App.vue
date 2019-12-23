@@ -1,7 +1,6 @@
 <template>
   <div id="app" class="dark">
-    <Titlebar />
-    <Sidebar />
+    <NavDrawer />
     <div class="app-content">
       <router-view />
       <Footer />
@@ -11,14 +10,12 @@
 
 <script>
 // @ is an alias to /src
-import Titlebar from "@/components/Titlebar.vue";
-import Sidebar from "@/components/Sidebar.vue";
+import NavDrawer from "@/components/NavDrawer.vue";
 import Footer from "@/components/Footer";
 
 export default {
   components: {
-    Titlebar,
-    Sidebar,
+    NavDrawer,
     Footer
   },
   created() {
