@@ -35,7 +35,8 @@ header {
   left: 0;
   right: 0;
   z-index: 8;
-  background: $colorBase;
+  background: inherit;
+  color: inherit;
 
   .inner {
     position: relative;

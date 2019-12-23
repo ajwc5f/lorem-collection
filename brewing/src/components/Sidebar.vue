@@ -34,7 +34,8 @@ export default {
   bottom: 0;
   left: 0;
   z-index: 9;
-  background: $colorBase;
+  background: inherit;
+  color: inherit;
 
   .sidebar__inner {
     position: relative;

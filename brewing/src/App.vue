@@ -1,6 +1,10 @@
 <template>
   <div id="app" class="dark">
-    <NavDrawer />
+    <div class="nav-container">
+      <Titlebar />
+      <Sidebar />
+      <NavDrawer />
+    </div>
     <div class="app-content">
       <router-view />
       <Footer />
@@ -10,11 +14,15 @@
 
 <script>
 // @ is an alias to /src
+import Titlebar from "@/components/Titlebar.vue";
+import Sidebar from "@/components/Sidebar.vue";
 import NavDrawer from "@/components/NavDrawer.vue";
 import Footer from "@/components/Footer";
 
 export default {
   components: {
+    Titlebar,
+    Sidebar,
     NavDrawer,
     Footer
   },
@@ -28,6 +36,16 @@ export default {
 </script>
 
 <style lang="scss">
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background: $colorBase;
+  color: $colorPrimary;
+}
 .app-content {
   position: relative;
   padding-top: $sidebarHeaderSize;
