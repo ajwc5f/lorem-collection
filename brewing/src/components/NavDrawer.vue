@@ -1,14 +1,23 @@
 <template>
-  <div class="nav-container --color-set-inverse">
-    <Titlebar class="--color-set-inverse" />
-    <Sidebar class="--color-set-inverse" hamburger-classes="--inverse"/>
-    <nav>
-      <a href="#">Products</a>
-      <a href="#">Our Story</a>
-      <a href="#">Find Us</a>
-      <a href="#">FAQ</a>
-      <a href="#">Shop</a>
-    </nav>
+  <div class="nav-drawer">
+    <div class="inner --color-set-inverse">
+      <Titlebar class="--color-set-inverse" />
+      <Sidebar class="--color-set-inverse" hamburger-classes="--inverse"/>
+      <div class="content">
+        <nav>
+          <div class="nav-inner">
+            <div class="nav-item"><a href="#"><span>Products</span></a></div>
+            <div class="nav-item"><a href="#"><span>Our Story</span></a></div>
+            <div class="nav-item"><a href="#"><span>Find Us</span></a></div>
+            <div class="nav-item"><a href="#"><span>FAQ</span></a></div>
+            <div class="nav-item"><a href="#"><span>Shop</span></a></div>
+          </div>
+        </nav>
+        <div class="nav-image">
+
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -26,36 +35,64 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.nav-container {
+.nav-drawer {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
   z-index: 10;
-  transform: translate(-100%, 0%) matrix(1, 0, 0, 1, 0, 0);
+  transform: translateX(-100%);
   transition: transform 0.5s;
 
   &.is-active {
     transform: matrix(1, 0, 0, 1, 0, 0);
+
+    .inner {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
   }
 
-  nav {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background: inherit;
-    color: $colorBase;
-    padding: $sidebarHeaderSize $sidebarHeaderSize 0 calc(3 * #{$sidebarHeaderSize});
+  .inner {
+    transform: translateX(100%);
+    transition: transform 0.5s;
+    will-change: transform;
+    height: 100%;
 
-    a {
+    .content {
+      height: 100vh;
+      background: inherit;
       color: $colorBase;
-      font-size: 4.25rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      margin: 1rem 0;
+      padding: $sidebarHeaderSize 0 0 $sidebarHeaderSize;
+
+      nav {
+        @include content-left;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .nav-inner {
+          text-align: left;
+          .nav-item {
+            margin: 1.5rem 0;
+
+            a {
+              color: $colorBase;
+              font-size: 4.5rem;
+              text-decoration: none;
+              text-transform: uppercase;
+              @include underline-hover-anchor($colorBase);
+            }
+          }
+        }
+      }
+
+      div {
+
+      }
     }
   }
 }

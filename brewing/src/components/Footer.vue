@@ -69,15 +69,15 @@ export default {
 <style scoped lang="scss">
 footer {
   .action {
-    background: $colorPrimary !important;
-    color: $colorBase !important;
+    background: $colorPrimary;
+    color: $colorBase;
     text-align: center;
     padding: $gapLarge $gapStandard;
     font-size: 2.5rem;
 
     a {
       text-decoration: none;
-      color: $colorBase !important;
+      color: $colorBase;
     }
   }
 
@@ -118,6 +118,7 @@ footer {
         a {
           font-size: 1.5rem;
           text-transform: uppercase;
+          @include underline-hover-anchor($colorPrimary);
         }
       }
     }
