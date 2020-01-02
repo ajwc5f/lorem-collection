@@ -5,6 +5,7 @@
       <Sidebar class="--color-set-inverse" hamburger-classes="--inverse"/>
       <div class="content">
         <nav>
+          <!-- TODO: Convert to <ul> -->
           <div class="nav-inner">
             <div class="nav-item"><a href="#"><span>Products</span></a></div>
             <div class="nav-item"><a href="#"><span>Our Story</span></a></div>
