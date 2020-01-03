@@ -2,20 +2,35 @@
   <div class="nav-drawer">
     <div class="inner --color-set-inverse">
       <Titlebar class="--color-set-inverse" />
-      <Sidebar class="--color-set-inverse" hamburger-classes="--inverse"/>
+      <Sidebar class="--color-set-inverse" hamburger-classes="--inverse" />
       <div class="content">
         <nav>
-          <!-- TODO: Convert to <ul> -->
-          <div class="nav-inner">
-            <div class="nav-item"><a href="#"><span>Products</span></a></div>
-            <div class="nav-item"><a href="#"><span>Our Story</span></a></div>
-            <div class="nav-item"><a href="#"><span>Find Us</span></a></div>
-            <div class="nav-item"><a href="#"><span>FAQ</span></a></div>
-            <div class="nav-item"><a href="#"><span>Shop</span></a></div>
-          </div>
+          <ul>
+            <li
+              v-for="(item, i) in navItems"
+              :key="'navItem' + i"
+              @mouseenter="currNavItem = i"
+              @mouseleave="currNavItem = null"
+            >
+              <a :href="item.href">{{ item.name }}</a>
+            </li>
+          </ul>
         </nav>
-        <div class="nav-image">
-
+        <div class="nav-images">
+          <transition
+            appear
+            name="fade"
+            mode="out-in"
+            v-for="(item, i) in navItems"
+            :key="'navImage' + i"
+          >
+            <SvgGraphic
+              :name="item.graphic.name"
+              inkColor="#ff5678"
+              :accentColor="item.graphic.accentColor"
+              v-show="currNavItem === i"
+            />
+          </transition>
         </div>
       </div>
     </div>
@@ -23,15 +38,64 @@
 </template>
 
 <script>
-import Titlebar from "@/components/Titlebar.vue";
-import Sidebar from "@/components/Sidebar.vue";
+import Titlebar from "@/components/Titlebar";
+import Sidebar from "@/components/Sidebar";
+import SvgGraphic from "@/components/SvgGraphic";
 
 export default {
+  name: "NavContainer",
   components: {
     Titlebar,
-    Sidebar
+    Sidebar,
+    SvgGraphic
   },
-  name: "NavContainer"
+  data: function() {
+    return {
+      currNavItem: null,
+      navItems: [
+        {
+          name: "Products",
+          href: "#",
+          graphic: {
+            name: "WomanRunning",
+            accentColor: "#ffaf50"
+          }
+        },
+        {
+          name: "Our Story",
+          href: "#",
+          graphic: {
+            name: "ManHeart",
+            accentColor: "#7fbbca"
+          }
+        },
+        {
+          name: "Find Us",
+          href: "#",
+          graphic: {
+            name: "WomanWalking",
+            accentColor: "#d8d27f"
+          }
+        },
+        {
+          name: "FAQ",
+          href: "#",
+          graphic: {
+            name: "WomanMeditating",
+            accentColor: "#48d878"
+          }
+        },
+        {
+          name: "Shop",
+          href: "#",
+          graphic: {
+            name: "ManBikini",
+            accentColor: "#d183ff"
+          }
+        }
+      ]
+    };
+  }
 };
 </script>
 
@@ -66,18 +130,25 @@ export default {
       background: inherit;
       color: $colorBase;
       padding: $sidebarHeaderSize 0 0 $sidebarHeaderSize;
+      display: flex;
 
       nav {
-        @include content-left;
+        @include content-left(40%);
+        z-index: 20;
+        overflow: hidden;
         height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
 
-        .nav-inner {
+        ul {
           text-align: left;
-          .nav-item {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+
+          li {
             margin: 1.5rem 0;
 
             a {
@@ -91,10 +162,25 @@ export default {
         }
       }
 
-      div {
+      .nav-images {
+        @include content-right(60%);
+        height: 100%;
+        padding-top: $gapSmall;
 
+        svg {
+          width: 133%;
+          height: 133%;
+        }
       }
     }
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>

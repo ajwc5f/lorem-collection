@@ -7,7 +7,7 @@
     </div>
     <div class="footer-main-content">
       <div class="logo --accent-font">
-        <h2>Lorem<br />Brewing</h2>
+        <h2><span>Lorem</span><br />Brewing</h2>
       </div>
       <ul class="links">
         <li v-for="(link, i) in links" :key="i + '_footer_link'">
@@ -101,6 +101,11 @@ footer {
 
     .logo {
       text-align: left;
+      h2 {
+        span {
+          color: $colorAccent;
+        }
+      }
     }
 
     .links {

@@ -1,11 +1,11 @@
-@mixin content-left {
+@mixin content-left($width: $sectionLeftWidth) {
     justify-content: flex-start;
-    width: $sectionLeftWidth;
+    width: $width;
 }
 
-@mixin content-right {
+@mixin content-right($width: $sectionRightWidth) {
     justify-content: flex-end;
-    width: $sectionRightWidth;
+    width: $width;
 }
 
 @mixin underline-hover-anchor($color) {

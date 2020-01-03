@@ -1,7 +1,7 @@
 <template>
   <svg
-    width="2324px"
-    height="2224px"
+    width="1800px"
+    height="1750px"
     viewBox="0 0 2324 2224"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -170,5 +170,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped></style>
