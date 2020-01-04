@@ -49,7 +49,7 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: #d3e9ff;
+    background: rgb(210, 236, 255);
 
     svg {
       width: 90%;

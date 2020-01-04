@@ -6,7 +6,25 @@
       </a>
     </div>
     <div class="inner --right">
-      <a class="find --subtle" href="#" v-html="text.findUs"></a>
+      <a class="find --subtle" href="#"
+         @mouseenter="isHovering = true"
+         @mouseleave="isHovering = false">
+        Find Us
+        <transition
+                appear
+                name="fade"
+                mode="out-in"
+        >
+          <i class="fal fa-search-location" v-show="!isHovering"></i>
+        </transition>
+        <transition
+                appear
+                name="fade"
+                mode="out-in"
+        >
+          <i class="fad fa-search-location" v-show="isHovering"></i>
+        </transition>
+      </a>
     </div>
   </header>
 </template>
@@ -16,6 +34,7 @@ export default {
   name: "Titlebar",
   data: function() {
     return {
+      isHovering: false,
       text: {
         logo: "LOREM",
         findUs: 'Find Us <i class="fal fa-search-location"></i>'
@@ -49,6 +68,9 @@ header {
       font-family: $fontAccent;
       text-decoration: none;
       color: $colorAccent;
+      &:hover {
+        @include shake(0.75s);
+      }
     }
 
     .find {

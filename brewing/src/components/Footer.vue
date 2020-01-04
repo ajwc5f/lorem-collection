@@ -73,7 +73,7 @@ footer {
     color: $colorBase;
     text-align: center;
     padding: $gapLarge $gapStandard;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
 
     a {
       text-decoration: none;
@@ -117,11 +117,11 @@ footer {
 
       li {
         flex: 1 0 50%;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.1rem;
         text-align: left;
 
         a {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           text-transform: uppercase;
           @include underline-hover-anchor($colorPrimary);
         }

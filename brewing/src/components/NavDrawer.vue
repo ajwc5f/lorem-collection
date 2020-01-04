@@ -58,7 +58,7 @@ export default {
           href: "#",
           graphic: {
             name: "WomanRunning",
-            accentColor: "#ffaf50"
+            accentColor: "#ffffff"
           }
         },
         {
@@ -66,7 +66,7 @@ export default {
           href: "#",
           graphic: {
             name: "ManHeart",
-            accentColor: "#7fbbca"
+            accentColor: "#ffffff"
           }
         },
         {
@@ -74,7 +74,7 @@ export default {
           href: "#",
           graphic: {
             name: "WomanWalking",
-            accentColor: "#d8d27f"
+            accentColor: "#ffffff"
           }
         },
         {
@@ -82,7 +82,7 @@ export default {
           href: "#",
           graphic: {
             name: "WomanMeditating",
-            accentColor: "#48d878"
+            accentColor: "#ffffff"
           }
         },
         {
@@ -90,7 +90,7 @@ export default {
           href: "#",
           graphic: {
             name: "ManBikini",
-            accentColor: "#d183ff"
+            accentColor: "#ffffff"
           }
         }
       ]
@@ -134,6 +134,8 @@ export default {
 
       nav {
         @include content-left(40%);
+        min-width: 600px;
+        min-height: 650px;
         z-index: 20;
         overflow: hidden;
         height: 100%;
@@ -165,22 +167,14 @@ export default {
       .nav-images {
         @include content-right(60%);
         height: 100%;
-        padding-top: $gapSmall;
 
         svg {
-          width: 133%;
-          height: 133%;
+          width: 100%;
+          height: 100%;
+          padding: $gapStandard;
         }
       }
     }
   }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
 }
 </style>

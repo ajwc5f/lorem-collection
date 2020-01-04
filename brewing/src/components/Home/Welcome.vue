@@ -1,30 +1,22 @@
 <template>
   <section class="welcome --bb">
     <div class="cta --br">
-      <h1 class="--bold-text">{{ text.main }}</h1>
-      <h3>{{ text.sub }}</h3>
+      <h1 class="--bold-text">Lorem ipsum.<br>Dolor sit amet.</h1>
+      <h3>Diam phasellus vestibulum sed risus ultricies tristique nulla.</h3>
     </div>
     <div class="image-container">
-      <WomanDogGraphic />
+      <SvgGraphic name="WomanDog" inkColor="#000000" accentColor="#ffffff" />
     </div>
   </section>
 </template>
 
 <script>
-import WomanDogGraphic from "../Graphics/WomanDog";
+import SvgGraphic from "../SvgGraphic";
 
 export default {
   name: "Welcome",
   components: {
-    WomanDogGraphic
-  },
-  data: function() {
-    return {
-      text: {
-        main: "Lorem ipsum. Dolor sit amet.",
-        sub: "Diam phasellus vestibulum sed risus ultricies tristique nulla."
-      }
-    };
+    SvgGraphic
   }
 };
 </script>

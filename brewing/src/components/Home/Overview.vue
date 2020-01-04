@@ -10,7 +10,7 @@
         class="product"
       >
         <img :src="product.image" :alt="product.name" />
-        <h3 class="--accent-font">{{ product.name }}</h3>
+        <h3 class="--accent-font" :style="{color: product.color}">{{ product.name }}</h3>
       </li>
     </ul>
     <div class="summary">
@@ -30,36 +30,42 @@ export default {
           '"Quis enim lobortis scelerisque fermentum dui faucibus. Risus sed vulputate odio ut enim."',
         summary:
           "Proin eu pretium lacus, vitae varius elit. Aliquam laoreet mollis turpis, vitae dapibus metus finibus sed. Praesent volutpat id sapien et sodales. Maecenas nisi felis, consequat et porttitor at, faucibus id massa. Aenean venenatis risus a ultrices ultricies. Nulla iaculis eleifend interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        learnMore: "Want to learn more about how we brew our beers?"
+        learnMore: "Want to learn more?"
       },
       products: [
         {
           name: "Citra IPA",
+          color: "rgba(21,145,27,0.78)",
           image:
             "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
         },
         {
           name: "Hazy IPA",
+          color: "rgb(255,195,99)",
           image:
             "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
         },
         {
           name: "Lager",
+          color: "#85bdff",
           image:
             "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
         },
         {
           name: "Cherry Sour",
+          color: "#ff0819",
           image:
             "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
         },
         {
           name: "Raspberry Sour",
+          color: "#ff3d81",
           image:
             "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
         },
         {
           name: "Nitro Stout",
+          color: "#ff8b1b",
           image:
             "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
         }
