@@ -12,9 +12,12 @@
 import LoremBanner from "@/components/Graphics/LoremBanner";
 import ManBikini from "@/components/Graphics/ManBikini";
 import ManHeart from "@/components/Graphics/ManHeart";
+import ManLaying from "@/components/Graphics/ManLaying";
+import ManSelfie from "@/components/Graphics/ManSelfie";
 import WomanDog from "@/components/Graphics/WomanDog";
 import WomanMeditating from "@/components/Graphics/WomanMeditating";
 import WomanPlant from "@/components/Graphics/WomanPlant";
+import WomanPhone from "@/components/Graphics/WomanPhone";
 import WomanRunning from "@/components/Graphics/WomanRunning";
 import WomanSwing from "@/components/Graphics/WomanSwing";
 import WomanWalking from "@/components/Graphics/WomanWalking";
@@ -25,9 +28,12 @@ export default {
     LoremBanner,
     ManBikini,
     ManHeart,
+    ManSelfie,
+    ManLaying,
     WomanDog,
     WomanMeditating,
     WomanPlant,
+    WomanPhone,
     WomanRunning,
     WomanSwing,
     WomanWalking

@@ -73,7 +73,7 @@ export default {
           name: "Find Us",
           href: "#",
           graphic: {
-            name: "WomanWalking",
+            name: "ManLaying",
             accentColor: "#ffffff"
           }
         },
