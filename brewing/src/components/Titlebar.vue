@@ -1,15 +1,14 @@
 <template>
   <header class="--bb">
     <div class="inner --left --br">
-      <a
+      <router-link
+        to="/"
         class="logo"
-        href="#"
-        ref="titlebarLogo"
         :class="{ shake: this.hoveringLogo }"
         @mouseover="hoverLogoToggle()"
       >
         <h2>LOREM</h2>
-      </a>
+      </router-link>
     </div>
     <div class="inner --right">
       <a class="find --subtle" href="#">

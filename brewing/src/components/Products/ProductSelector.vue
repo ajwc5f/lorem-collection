@@ -1,23 +1,10 @@
 <template>
-  <section class="welcome --bb">
-    <div class="cta --br">
-      <h1 class="--bold-text">Lorem ipsum.<br>Dolor sit amet.</h1>
-      <h3>Diam phasellus vestibulum sed risus ultricies tristique nulla.</h3>
-    </div>
-    <div class="image-container">
-      <SvgGraphic name="WomanDog" inkColor="#000000" accentColor="#ffffff" />
-    </div>
-  </section>
+  <section></section>
 </template>
 
 <script>
-import SvgGraphic from "../SvgGraphic";
-
 export default {
-  name: "Welcome",
-  components: {
-    SvgGraphic
-  }
+  name: "ProductSelector"
 };
 </script>
 

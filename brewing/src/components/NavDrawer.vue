@@ -12,7 +12,7 @@
               @mouseenter="currNavItem = i"
               @mouseleave="currNavItem = null"
             >
-              <a href="#"><router-link :to="item.routerLink">{{ item.name }}</router-link></a>
+              <router-link :to="item.routerLink">{{ item.name }}</router-link>
             </li>
           </ul>
         </nav>
@@ -63,7 +63,7 @@ export default {
         },
         {
           name: "Our Story",
-          routerLink: "/products",
+          routerLink: "/story",
           graphic: {
             name: "ManHeart",
             accentColor: "#ffffff"
@@ -71,7 +71,7 @@ export default {
         },
         {
           name: "Find Us",
-          routerLink: "/products",
+          routerLink: "/storelocator",
           graphic: {
             name: "ManLaying",
             accentColor: "#ffffff"
@@ -79,7 +79,7 @@ export default {
         },
         {
           name: "FAQ",
-          routerLink: "/products",
+          routerLink: "/faq",
           graphic: {
             name: "WomanMeditating",
             accentColor: "#ffffff"
@@ -87,7 +87,7 @@ export default {
         },
         {
           name: "Shop",
-          routerLink: "/products",
+          routerLink: "/shop",
           graphic: {
             name: "ManBikini",
             accentColor: "#ffffff"

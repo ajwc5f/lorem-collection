@@ -29,3 +29,10 @@
         }
     }
 }
+
+@mixin full-screen-flex() {
+    position: relative;
+    display: flex;
+    width: inherit;
+    height: calc(100vh - #{$sidebarHeaderSize} + #{$borderSize});
+}
