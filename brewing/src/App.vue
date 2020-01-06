@@ -4,7 +4,9 @@
     <Sidebar />
     <NavDrawer :class="{ 'is-active': this.$store.state.navDrawerIsActive }" />
     <div class="app-content">
-      <router-view />
+      <transition appear name="fade-slow" mode="out-in">
+        <router-view />
+      </transition>
       <Footer />
     </div>
   </div>
