@@ -29,6 +29,14 @@ export default {
     this.$store.state.globalContrastColor = this.invertColor(
       this.$store.state.globalPrimaryColor
     );
+  },
+  methods: {
+    hoverToggle(value, timeout){
+      let vm = this;
+      setTimeout(function(){
+        vm.hoveringLogo = value;
+      }, timeout);
+    }
   }
 };
 </script>

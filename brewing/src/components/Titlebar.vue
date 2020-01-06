@@ -1,29 +1,20 @@
 <template>
   <header class="--bb">
     <div class="inner --left --br">
-      <a class="logo" href="index.html">
-        <h2>{{ text.logo }}</h2>
+      <a
+        class="logo"
+        href="#"
+        ref="titlebarLogo"
+        :class="{ shake: this.hoveringLogo }"
+        @mouseover="hoverLogoToggle()"
+      >
+        <h2>LOREM</h2>
       </a>
     </div>
     <div class="inner --right">
-      <a class="find --subtle" href="#"
-         @mouseenter="isHovering = true"
-         @mouseleave="isHovering = false">
+      <a class="find --subtle" href="#">
         Find Us
-        <transition
-                appear
-                name="fade"
-                mode="out-in"
-        >
-          <i class="fal fa-search-location" v-show="!isHovering"></i>
-        </transition>
-        <transition
-                appear
-                name="fade"
-                mode="out-in"
-        >
-          <i class="fad fa-search-location" v-show="isHovering"></i>
-        </transition>
+        <i class="fal fa-search-location" v-show="!hoveringFindUs"></i>
       </a>
     </div>
   </header>
@@ -34,12 +25,20 @@ export default {
   name: "Titlebar",
   data: function() {
     return {
-      isHovering: false,
-      text: {
-        logo: "LOREM",
-        findUs: 'Find Us <i class="fal fa-search-location"></i>'
-      }
+      hoveringFindUs: false,
+      hoveringLogo: false
     };
+  },
+  methods: {
+    hoverLogoToggle() {
+      if (this.hoveringLogo) return;
+
+      this.hoveringLogo = true;
+      let vm = this;
+      setTimeout(function() {
+        vm.hoveringLogo = false;
+      }, 751);
+    }
   }
 };
 </script>
@@ -68,7 +67,7 @@ header {
       font-family: $fontAccent;
       text-decoration: none;
       color: $colorAccent;
-      &:hover {
+      &.shake {
         @include shake(0.75s);
       }
     }
