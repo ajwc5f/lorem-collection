@@ -5,7 +5,7 @@
         to="/"
         class="logo"
         :class="{ shake: this.hoveringLogo }"
-        @mouseover="hoverLogoToggle()"
+        @mouseover.native="hoverLogoToggle()"
       >
         <h2>LOREM</h2>
       </router-link>
