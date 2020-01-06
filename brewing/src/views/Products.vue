@@ -1,6 +1,11 @@
 <template>
   <div class="products">
-    These are our products.
+    <section class="selector">
+
+    </section>
+    <section class="images">
+
+    </section>
   </div>
 </template>
 

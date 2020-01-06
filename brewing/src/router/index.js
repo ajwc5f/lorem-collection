@@ -47,12 +47,11 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes
-});
-
-router.beforeEach((to, from, next) => {
-  store.state.navDrawerIsActive = false;
-  next();
+  routes,
+  beforeEach(to, from, next) {
+    store.state.navDrawerIsActive = false;
+    next();
+  }
 });
 
 export default router;

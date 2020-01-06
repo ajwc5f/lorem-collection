@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Welcome />
-    <ProductsOverview />
+    <Overview />
     <Story />
     <Shop />
     <GraphicSection>
@@ -18,7 +18,7 @@
 
 <script>
 import Welcome from "@/components/Home/Welcome";
-import ProductsOverview from "@/components/Home/ProductsOverview";
+import Overview from "@/components/Home/Overview";
 import Story from "@/components/Home/Story";
 import Shop from "@/components/Home/Shop";
 import GraphicSection from "@/components/GraphicSection";
@@ -28,7 +28,7 @@ export default {
   name: "home",
   components: {
     Welcome,
-    ProductsOverview,
+    Overview,
     Story,
     Shop,
     GraphicSection,

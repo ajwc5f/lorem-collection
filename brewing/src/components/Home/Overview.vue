@@ -5,12 +5,19 @@
     </div>
     <ul class="products">
       <li
-        v-for="(product, i) in $store.state.products"
+        v-for="(product, i) in products"
         :key="i + '_overview_product'"
         class="product"
       >
-        <img :src="product.image" :alt="product.name" />
-        <h3 class="--accent-font" :style="{color: product.color}">{{ product.name }}</h3>
+        <img
+          :src="currentHoverProduct === i ? product.can.crushed : product.can.front"
+          :alt="product.name"
+          @mouseenter="currentHoverProduct = i"
+          @mouseleave="currentHoverProduct = null"
+        />
+        <h3 class="--accent-font" :style="{ color: product.color }">
+          {{ product.name }}
+        </h3>
       </li>
     </ul>
     <div class="summary">
@@ -21,10 +28,13 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
-  name: "ProductsOverview",
+  name: "Overview",
   data: function() {
     return {
+      currentHoverProduct: null,
       text: {
         ticker:
           '"Quis enim lobortis scelerisque fermentum dui faucibus. Risus sed vulputate odio ut enim."',
@@ -33,6 +43,9 @@ export default {
         learnMore: "Want to learn more?"
       }
     };
+  },
+  computed: {
+    ...mapState(["products"])
   }
 };
 </script>
