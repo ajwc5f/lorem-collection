@@ -40,6 +40,13 @@
       </ul>
     </section>
     <section class="images">
+      <transition appear name="fade" mode="out-in">
+        <img
+          src="https://i5.walmartimages.com/asr/56a7e77f-4e34-4dcd-afa0-7901ebd83c88_2.8fcc542fe17ec845140580efd4ebc99d.jpeg?odnWidth=450&odnHeight=450&odnBg=ffffff"
+          alt=""
+          v-show="currentProduct === null"
+        />
+      </transition>
       <transition
         appear
         name="fade"
