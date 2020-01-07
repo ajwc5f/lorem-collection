@@ -7,11 +7,11 @@
     </div>
     <div class="footer-main-content">
       <div class="logo --accent-font">
-        <h2><span>Lorem</span><br />Brewing</h2>
+        <router-link to="/"><span>Lorem</span><br />Brewing</router-link>
       </div>
       <ul class="links">
         <li v-for="(link, i) in links" :key="i + '_footer_link'">
-          <a :href="link.href" class="--subtle">{{ link.text }}</a>
+          <router-link :to="link.routerLink" class="--subtle">{{ link.text }}</router-link>
         </li>
       </ul>
       <div class="updates">
@@ -33,31 +33,31 @@ export default {
     return {
       links: [
         {
-          href: "#",
+          routerLink: "/products",
           text: "Products"
         },
         {
-          href: "#",
+          routerLink: "/storelocator",
           text: "Find Us"
         },
         {
-          href: "#",
+          routerLink: "/story",
           text: "Our Story"
         },
         {
-          href: "#",
+          routerLink: "/contact",
           text: "Contact"
         },
         {
-          href: "#",
+          routerLink: "/events",
           text: "Events"
         },
         {
-          href: "#",
+          routerLink: "/instagram",
           text: "Instagram"
         },
         {
-          href: "#",
+          routerLink: "/faq",
           text: "FAQ"
         }
       ]
@@ -101,9 +101,19 @@ footer {
 
     .logo {
       text-align: left;
-      h2 {
+
+      a {
+        text-decoration: none;
+        font-size: 3rem;
+        transition: color 0.15s ease-in-out;
         span {
           color: $colorAccent;
+        }
+        &:hover {
+          color: $colorAccent;
+          span {
+            color: $colorPrimary;
+          }
         }
       }
     }
