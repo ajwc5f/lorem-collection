@@ -36,3 +36,9 @@
     width: inherit;
     height: calc(100vh - #{$sidebarHeaderSize} + #{$borderSize});
 }
+
+@mixin reset-list-styles(){
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

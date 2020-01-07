@@ -28,13 +28,14 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { products } from "../../assets/scripts/variables";
 
 export default {
   name: "Overview",
   data: function() {
     return {
       currentHoverProduct: null,
+      products: products,
       text: {
         ticker:
           '"Quis enim lobortis scelerisque fermentum dui faucibus. Risus sed vulputate odio ut enim."',
@@ -43,9 +44,6 @@ export default {
         learnMore: "Want to learn more?"
       }
     };
-  },
-  computed: {
-    ...mapState(["products"])
   }
 };
 </script>

@@ -145,10 +145,8 @@ export default {
         align-items: center;
 
         ul {
+          @include reset-list-styles;
           text-align: left;
-          padding: 0;
-          margin: 0;
-          list-style: none;
 
           li {
             margin: 1.5rem 0;
