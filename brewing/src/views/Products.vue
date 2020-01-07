@@ -4,7 +4,7 @@
       <ul>
         <transition
           appear
-          name="fade-slow"
+          name="fade"
           mode="out-in"
           v-for="(product, i) in products"
           :key="i + '_product'"
@@ -15,6 +15,7 @@
             @click="toggleProduct(i)"
             @mouseenter="currentHoveredProduct = i"
             @mouseleave="currentHoveredProduct = null"
+            :class="{ active: currentProduct === i }"
           >
             <div
               class="header --by"
@@ -26,13 +27,29 @@
               }"
             >
               <h3>{{ product.name }}</h3>
+              <i class="fal fa-times" v-show="currentProduct === i"></i>
+              <i class="fal fa-long-arrow-right" v-show="currentProduct !== i"></i>
             </div>
-            <div class="overview" v-show="currentProduct === i"></div>
+            <div class="overview" v-show="currentProduct === i">
+              <p>
+                {{ product.desc }}
+              </p>
+            </div>
           </li>
         </transition>
       </ul>
     </section>
-    <section class="images"></section>
+    <section class="images">
+      <transition
+        appear
+        name="fade"
+        mode="out-in"
+        v-for="(product, i) in products"
+        :key="i + '_product_image'"
+      >
+        <img :src="product.can.front" :alt="product.name" v-show="currentProduct === i">
+      </transition>
+    </section>
   </div>
 </template>
 
@@ -76,27 +93,53 @@ export default {
         cursor: pointer;
 
         .header {
-          text-align: center;
-          padding: $gapSmall;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: center;
+          text-align: left;
+          padding: $gapSmall $gapStandard;
           margin: -2px 0;
           font-family: $fontAccent;
 
           h3 {
             will-change: transform;
-            transition: 0.25s ease-in-out;
+            transition: 0.2s ease-in-out;
+          }
+
+          i {
+            font-size: 2.9rem;
           }
 
           &:hover {
             h3 {
-              transform: rotate(-4deg);
+              font-size: 1.5em;
+            }
+          }
+        }
+
+        &.active {
+          .header {
+            h3 {
+              font-size: 1.5em;
             }
           }
         }
 
         .overview {
           height: auto;
+          padding: $gapStandard;
         }
       }
+    }
+  }
+
+  .images {
+    @include content-right;
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
