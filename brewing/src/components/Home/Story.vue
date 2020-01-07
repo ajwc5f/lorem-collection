@@ -5,18 +5,18 @@
       <button class="--link-out">{{ text.button }}</button>
     </div>
     <div class="image-container">
-      <WomanSwingGraphic />
+      <img src="https://images.squarespace-cdn.com/content/5bac513e77b9031eb8d17df4/1573010745019-M4S53LQHHG8P6X6BI3GD/Brewery%2BShow%2BComedy%2BBrewers.jpg?content-type=image%2Fjpeg" alt="">
     </div>
   </section>
 </template>
 
 <script>
-import WomanSwingGraphic from "../Graphics/WomanSwing";
+//import WomanSwingGraphic from "../Graphics/WomanSwing";
 
 export default {
   name: "Story",
   components: {
-    WomanSwingGraphic
+    //WomanSwingGraphic
   },
   data: function() {
     return {
