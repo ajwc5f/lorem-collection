@@ -5,18 +5,19 @@
       <button class="--link-out">{{ text.button }}</button>
     </div>
     <div class="image-container">
-      <img src="https://images.squarespace-cdn.com/content/5bac513e77b9031eb8d17df4/1573010745019-M4S53LQHHG8P6X6BI3GD/Brewery%2BShow%2BComedy%2BBrewers.jpg?content-type=image%2Fjpeg" alt="">
+      <!--<img src="https://i2.wp.com/wearebrewstuds.com/wp-content/uploads/2018/06/craft-beer-grimm-ales-owners-e1533484746581.png?fit=960%2C640&ssl=1" alt="">-->
+      <WomanSwingGraphic />
     </div>
   </section>
 </template>
 
 <script>
-//import WomanSwingGraphic from "../Graphics/WomanSwing";
+import WomanSwingGraphic from "../Graphics/WomanSwing";
 
 export default {
   name: "Story",
   components: {
-    //WomanSwingGraphic
+    WomanSwingGraphic
   },
   data: function() {
     return {
@@ -49,7 +50,7 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: rgb(210, 236, 255);
+    background: $colorAccent;
 
     svg {
       width: 90%;

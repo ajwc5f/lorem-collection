@@ -4,9 +4,9 @@ export const products = {
     color: "#15911b",
     can: {
       front:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png",
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png",
       crushed:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png"
     },
     desc: "Nunc dolor diam, rutrum id nulla non, porttitor tincidunt velit. Integer a tortor eu enim vestibulum maximus a ac nisl. Morbi nisi sem, euismod sit amet posuere et, laoreet et nisl. Nunc sit amet mollis diam, eu egestas urna. Donec id elit vel sapien aliquet tempor eget in nulla. Sed tempor magna vel sapien condimentum lacinia."
   },
@@ -15,9 +15,9 @@ export const products = {
     color: "#ffc363",
     can: {
       front:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png",
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png",
       crushed:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png"
     },
     desc: "Nunc dolor diam, rutrum id nulla non, porttitor tincidunt velit. Integer a tortor eu enim vestibulum maximus a ac nisl. Morbi nisi sem, euismod sit amet posuere et, laoreet et nisl. Nunc sit amet mollis diam, eu egestas urna. Donec id elit vel sapien aliquet tempor eget in nulla. Sed tempor magna vel sapien condimentum lacinia."
   },
@@ -26,9 +26,9 @@ export const products = {
     color: "#85bdff",
     can: {
       front:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png",
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png",
       crushed:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png"
     },
     desc: "Nunc dolor diam, rutrum id nulla non, porttitor tincidunt velit. Integer a tortor eu enim vestibulum maximus a ac nisl. Morbi nisi sem, euismod sit amet posuere et, laoreet et nisl. Nunc sit amet mollis diam, eu egestas urna. Donec id elit vel sapien aliquet tempor eget in nulla. Sed tempor magna vel sapien condimentum lacinia."
   },
@@ -37,9 +37,9 @@ export const products = {
     color: "#ff0819",
     can: {
       front:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png",
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png",
       crushed:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png"
     },
     desc: "Nunc dolor diam, rutrum id nulla non, porttitor tincidunt velit. Integer a tortor eu enim vestibulum maximus a ac nisl. Morbi nisi sem, euismod sit amet posuere et, laoreet et nisl. Nunc sit amet mollis diam, eu egestas urna. Donec id elit vel sapien aliquet tempor eget in nulla. Sed tempor magna vel sapien condimentum lacinia."
   },
@@ -48,9 +48,9 @@ export const products = {
     color: "#ff3d81",
     can: {
       front:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png",
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png",
       crushed:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png"
     },
     desc: "Nunc dolor diam, rutrum id nulla non, porttitor tincidunt velit. Integer a tortor eu enim vestibulum maximus a ac nisl. Morbi nisi sem, euismod sit amet posuere et, laoreet et nisl. Nunc sit amet mollis diam, eu egestas urna. Donec id elit vel sapien aliquet tempor eget in nulla. Sed tempor magna vel sapien condimentum lacinia."
   },
@@ -59,9 +59,9 @@ export const products = {
     color: "#ff8b1b",
     can: {
       front:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png",
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png",
       crushed:
-        "https://www.tecatebeerusa.com/assets/images/home/tecate-original-beer.png"
+        "https://www.braxtonbrewing.com/wp-content/uploads/2019/05/GarageBeerRenderFRONT.png"
     },
     desc: "Nunc dolor diam, rutrum id nulla non, porttitor tincidunt velit. Integer a tortor eu enim vestibulum maximus a ac nisl. Morbi nisi sem, euismod sit amet posuere et, laoreet et nisl. Nunc sit amet mollis diam, eu egestas urna. Donec id elit vel sapien aliquet tempor eget in nulla. Sed tempor magna vel sapien condimentum lacinia."
   }

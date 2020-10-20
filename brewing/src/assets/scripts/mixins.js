@@ -21,8 +21,8 @@ export default {
       }
       // invert color components
       let r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16),
-        g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
-        b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
+          g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
+          b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
       // pad each with zeros and return
       return "#" + this.padZero(r) + this.padZero(g) + this.padZero(b);
     },
